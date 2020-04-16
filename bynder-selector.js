@@ -125,6 +125,7 @@ function setupSelector(value) {
           images = images.filter(image => image.id !== asset.id);
           images.push({
             id: asset.id,
+            originalUrl: asset.original,
             previewUrl: asset.thumbnails[config.previewDerivative || 'webimage'],
             webUrl: asset.thumbnails[config.webDerivative || 'webimage'],
             title: asset.name,
